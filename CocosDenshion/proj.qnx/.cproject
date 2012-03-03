@@ -55,9 +55,15 @@
 							<tool id="com.qnx.qcc.tool.assembler.699645133" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.515710874" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.assembler.includePath.433672911" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<!--
 									<listOptionValue builtIn="false" value="E:/blackberry/bbndk-1.0/target/qnx6/usr/include/freetype2"/>
 									<listOptionValue builtIn="false" value="E:/blackberry/bbndk-1.0/target/target-override/usr/include"/>
 									<listOptionValue builtIn="false" value="F:/Project/dumganhar/cocos2d-x/CocosDenshion/include"/>
+									-->
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/freetype2"/>
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/usr/include"/>
+									<listOptionValue builtIn="false" value="../../include"/>
+									<listOptionValue builtIn="false" value="../../third_party/qnx/include"/>
 								</option>
 								<option id="com.qnx.qcc.option.assembler.defines.1299555516" name="Defines (-D)" superClass="com.qnx.qcc.option.assembler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
